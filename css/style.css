@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
 /*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
+.style__number {
+  font-family: Inter
+}
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +24,7 @@ html {
   min-width: 320px
 }
 body {
-  color: #000;
+  color: #5b5b5b;
   line-height: 1;
   font-family: "Playfair Display";
   font-size: 1rem;
@@ -284,7 +287,6 @@ h6 {
   padding-top: 1.875rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-size: 35px;
   font-style: normal;
   font-weight: 500;
@@ -316,7 +318,6 @@ h6 {
 }
 .menu__info-link {
   color: #5b5b5b;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -378,7 +379,6 @@ h6 {
   width: 100%;
   padding: 0 .9375rem;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
@@ -391,8 +391,7 @@ h6 {
   gap: .5rem;
   border-radius: 9.375rem;
   background-color: #fff;
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -440,7 +439,6 @@ h6 {
   width: 100%;
   padding: 0 .9375rem;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
@@ -453,8 +451,7 @@ h6 {
   gap: .5rem;
   border-radius: 9.375rem;
   background-color: #fff;
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -497,7 +494,6 @@ h6 {
 .advantages__title {
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -520,7 +516,6 @@ h6 {
   padding-top: 3.75rem;
   color: #92897e;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase
@@ -543,7 +538,6 @@ h6 {
 .about__title {
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -564,6 +558,7 @@ h6 {
   display: flex
 }
 .about__product-img {
+  max-width: 12.8125rem;
   transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
   transition: transform .4s ease,-webkit-transform .4s ease
@@ -574,9 +569,8 @@ h6 {
   justify-content: center;
   max-width: 11.25rem;
   margin: 1.5rem auto 0;
-  color: #000;
+  color: #5b5b5b;
   text-align: center;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -597,7 +591,6 @@ h6 {
   position: relative;
   color: #5b5b5b;
   text-transform: uppercase;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500
 }
@@ -639,7 +632,6 @@ h6 {
   margin-bottom: 4.4375rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-weight: 500;
   font-style: normal;
   text-transform: uppercase
@@ -667,7 +659,6 @@ h6 {
 }
 .expert__text {
   color: #5b5b5b;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase
@@ -680,8 +671,7 @@ h6 {
   padding: .75rem 1.5rem;
   border-radius: 9.375rem;
   background-color: #fff;
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -716,7 +706,6 @@ h6 {
   max-width: 46.1875rem;
   color: #fff;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
@@ -735,9 +724,11 @@ h6 {
   height: auto;
   display: block
 }
+.philosophy__image--left {
+  max-width: 30.625rem
+}
 .philosophy__description {
   color: #5b5b5b;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   max-width: 24.9375rem
@@ -751,7 +742,6 @@ h6 {
   position: relative;
   padding-left: 1.25rem;
   color: #5b5b5b;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400
 }
@@ -764,6 +754,16 @@ h6 {
   height: .375rem;
   background-color: #5b5b5b;
   border-radius: 50%
+}
+.philosophy__image--right {
+  max-width: 18.875rem
+}
+.philosophy__image--bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 19.3125rem
 }
 .philosophy__footer-image {
   margin-top: 2.5rem;
@@ -799,7 +799,6 @@ h6 {
 .gift__title {
   max-width: 48.875rem;
   color: #fff;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -808,7 +807,6 @@ h6 {
   margin-top: 2.5rem;
   max-width: 21.1875rem;
   color: #fff;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   text-align: center
@@ -822,8 +820,7 @@ h6 {
   padding: .75rem 1.5rem;
   border-radius: 9.375rem;
   background-color: #fff;
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -859,7 +856,6 @@ h6 {
   flex: 1 1 auto
 }
 .visit__title {
-  font-family: "Playfair Display",serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #5b5b5b;
@@ -874,7 +870,6 @@ h6 {
   max-width: 40rem;
   text-align: left;
   color: #3f3f3f;
-  font-family: Inter,sans-serif;
   font-weight: 400;
   font-style: normal
 }
@@ -908,7 +903,6 @@ h6 {
   gap: .625rem;
   text-decoration: none;
   color: #3f3f3f;
-  font-family: Inter,sans-serif;
   font-size: 1rem;
   text-transform: uppercase
 }
@@ -967,7 +961,6 @@ h6 {
 }
 .footer__nav a {
   color: #5b5b5b;
-  font-family: Inter,sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -993,10 +986,9 @@ h6 {
   padding: .75rem 1.5rem;
   border-radius: 9.375rem;
   background-color: #ece5dc;
-  font-family: Inter,sans-serif;
   font-size: .875rem;
   font-weight: 400;
-  color: #000;
+  color: #5b5b5b;
   line-height: 1;
   text-transform: uppercase;
   transition: all .3s ease;
@@ -1013,7 +1005,7 @@ h6 {
 }
 .injection {
   padding-top: 10rem;
-  padding-bottom: 10rem
+  padding-bottom: 6.25rem
 }
 .injection__container {
   display: flex;
@@ -1025,7 +1017,6 @@ h6 {
   max-width: 27.5rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -1067,21 +1058,19 @@ h6 {
   padding-bottom: 1.5rem
 }
 .injection__subtitle {
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
 }
 .injection__text {
   color: #5b5b5b;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400
 }
 .esthetic {
   padding-top: 10rem;
-  padding-bottom: 10rem
+  padding-bottom: 6.25rem
 }
 .esthetic__container {
   display: flex;
@@ -1093,15 +1082,14 @@ h6 {
   max-width: 27.5rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
-  text-transform: uppercase
+  text-transform: uppercase;
+  padding-bottom: 4.375rem
 }
 .esthetic__row {
   display: flex;
   align-items: flex-end;
-  padding-top: 4.375rem;
   width: 100%
 }
 .esthetic__row--one {
@@ -1135,21 +1123,19 @@ h6 {
   padding-bottom: 1.5rem
 }
 .esthetic__subtitle {
-  color: #000;
-  font-family: Inter;
+  color: #5b5b5b;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
 }
 .esthetic__text {
   color: #5b5b5b;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400
 }
 .hardware {
   padding-top: 10rem;
-  padding-bottom: 10rem
+  padding-bottom: 6.25rem
 }
 .hardware__container {
   display: flex;
@@ -1160,7 +1146,6 @@ h6 {
 .hardware__title {
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -1190,13 +1175,11 @@ h6 {
   width: 100%
 }
 .hardware__subtitle {
-  font-family: Inter;
   font-weight: 500;
   text-transform: uppercase;
-  color: #000
+  color: #5b5b5b
 }
 .hardware__text {
-  font-family: Inter;
   font-weight: 400;
   color: #5b5b5b
 }
@@ -1214,7 +1197,6 @@ h6 {
   max-width: 22.8125rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase
@@ -1259,7 +1241,6 @@ h6 {
   max-width: 34.875rem;
   color: #5b5b5b;
   text-align: center;
-  font-family: Inter;
   font-style: normal;
   font-weight: 400
 }
@@ -1274,7 +1255,6 @@ h6 {
   background-color: #fff;
   border-radius: 9.375rem;
   color: #5b5b5b;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1959,10 +1939,9 @@ h6 {
     margin-left: 0
   }
   .giftcard__card-wrapper {
-    margin-top: 19.75rem;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    margin-right: 0
+    margin: 19.75rem auto 0 auto
   }
   .giftcard__card.animate {
     -webkit-transform: translateX(15.625rem);
